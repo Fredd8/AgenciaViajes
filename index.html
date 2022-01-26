@@ -1,27 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/estilo.css" rel="stylesheet" type="text/css">
-    <title>Viajes DW1D1E</title>
+  <meta charset="utf-8">
+  <title>HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
-    <div class="header">
-        <div class="logo">
-            <img src="img/logo.png" width="300" height="200"/>
-        </div>
-        <h1>Viajes DW1D1E</h1>
-    </div>
-    <div class="menu">
-        <a href="#"> enlace1 </a>
-    </div>
-    <div class="cuerpo">
+  <video autoplay muted loop id="myVideo">
+    <source src="video/fondo.mp4" type="video/mp4">
+  </video>
 
+  <!-- Esto sera la cabecera -->
+  <header>
+    <div>
+      <!-- Imagen en css -->
     </div>
-    <div class="pie">
+    <div>
+      <a href="index.html" ><h1>FreddyExpress</h1></a>
+    </div>
+    <div>
+      <a href="#Ayuda"><img src="img/help.png"></a>       <!-- Icon Ayuda  -->
+      <a href="#miModal"><img src="img/user.png"></a>     <!-- Icon Login -->
+    </div>
+  </header>
+  <nav>
+    <a href="c_AmericaNorte.html"><p>America Norte</p></a>
+    <a href="c_AmericaSur.html"><p>America Sur</p></a>
+    <a href="c_Europa.html"><p>Europa</p></a>
+    <a href="c_Africa.html"><p>Africa</p></a>
+    <a href="c_Asia.html"><p>Asia</p></a>
+    <a href="c_Oceania.html"><p>Oceania</p></a>
+  </nav>
 
+  <!-- Esto la cuerpo -->
+  <div class="space"></div>
+
+  <!-- Mapa interactivo-->
+  <section class="mapamundi">
+    <div class="mapa">
+      <img src="img/mapamundi.jpg" usemap="#mapa"/>
+      <map name="mapa">
+        <area shape="poly" alt="Europa" href="c_Europa.html"                  coords="287,153,362,155,387,44,268,10,212,37,230,96" />
+        <area shape="poly" alt="Asia" href="c_Asia.html"                      coords="354,165,375,192,436,205,483,215,539,150,569,33,430,27,388,59" />
+        <area shape="poly" alt="Oceania" href="c_Oceania.html"                coords="467,208,498,284,558,296,571,264,561,226,521,202"/>
+        <area shape="poly" alt="America del Norte" href="c_AmericaNorte.html" coords="41,85,113,180,142,189,209,116,196,37,179,15,82,27,42,65" />
+        <area shape="poly" alt="America del Sur" href="c_AmericaSur.html"     coords="143,191,175,307,192,322,239,225,188,198,164,176,"/>
+        <area shape="poly" alt="Africa" href="c_Africa.html"                  coords="309,152,352,165,387,199,379,258,327,275,265,193,281,162,"/>
+      </map>
     </div>
+  </section>
+  <section class="titulodescubre">
+
+    <article><h2>Últimas ofertas</h2></article>
+
+  </section>
+  <section class="ofertas">
+
+    <!--Primera oferta-->
+
+    <article class="firstofer">
+      <a href="c_AmericaSur.html"><img src="img/oferta1.jpg" width="215px"></a>
+    </article>
+
+    <!--Texto/anuncio--> 
+
+    <article class="tituoferta"> 
+      <img src="img/oferta.png" width="125px"></a>
+    </article>
+
+    <!--Segunda oferta-->
+
+    <article class="secondofer">
+      <a href="c_Oceania.html"><img src="img/oferta2.jpg" width="245px"></a>
+    </article>
+
+  </section>
+
+
+  <!--Titulo de las paginas inferiores-->
+  <section class="titulodescubre">
+
+    <article><h2>Descubre opciones nuevas</h2></article>
+
+  </section>
+
+
+  <!--Paginas inferiores-->
+  <section class="descubreoption">
+
+    <article><a href="c_AmericaSur.html"><img src="img/aventura.jpg" alt=""></a><p>Aventura</p></article>
+    <article><a href="c_AmericaNorte.html"><img src="img/familia.jpg" alt=""></a><p>Familia</p></article>
+    <article><a href="c_Asia.html"><img src="img/Cultura.jpg" alt=""></a><p>Cultura</p></article>
+    <article><a href="c_Europa.html"><img src="img/pareja.jpg" alt=""></a><p>Pareja</p></article>
+
+  </section>
+
+  <!-- Esto el pie de página -->
+  <footer>
+    <section class="pie">
+      <div>
+        <h1>LOCALIZACION</h1><br/>
+        <dl>
+          <dd>FreddyExpress Company</dd>
+          <dd>3 Av. America 209 </dd>
+          <dd>Madrid, CP 28028</dd>
+          <dd></dd>
+          <dd>@ 2021 FreddyExpress Company SA</dd>
+        </dl>
+      </div>
+      <div>
+        <h1>REDES SOCIALES</h1><br/>
+        <a href="https://es-es.facebook.com"><img src="img/facebook.png"></a>
+        <a href="https://twitter.com/?lang=es"><img src="img/titwer.png"></a>
+        <a href="https://www.instagram.com/?hl=es"><img src="img/insta.png"></a>
+      </div>
+      <div>
+        <h1>SOBRE NOSOTROS</h1><br/>
+        <dl>
+          <dd> CEO &nbsp; Freddy Leyva</dd>
+          <dd> Director &nbsp; Beni</dd>
+          <dd> Manager &nbsp; Alvaro</dd>
+          <dd><br/> </dd>
+          <dd> Tel: 668 96 87 35</dd>
+        </dl>
+      </div>
+    </section>
+  </footer>
+
+  <!-- Ventana Modal: Login-->
+  <div id="miModal" class="modal">
+    <form action="ofertas.html"> 
+      <div class="modal-login modal-all">
+        <a href="#"><p>x</p></a> 
+        <h2>Iniciar sesión</h2><br/>
+        <label>Usuario:</label><br/>
+        <input type="text"><br/><br/>
+        <label>Contraseña:</label><br/>
+        <input type="password"><br/><br/>
+        <input type="submit" value="Continuar">
+        <input type="reset" value="Borrar">
+      </div> 
+    </form> 
+  </div>
+  
+  <!-- Ventana Modal: Ayuda-->
+  <div id="Ayuda" class="modal">
+    <form action="#"> 
+      <div class="modal-ayuda modal-all">
+        <a href="#"><p>x</p></a> 
+        <h2>Preguntas frecuentes</h2><br/>
+        <label>Buscador:</label><br/>
+        <input type="text">
+        <input type="button" value="Buscar"><br/><br/>
+        <div class="modal-busquedas">
+          <h1>Atencion al Cliente</h1><br/>
+          <div>
+            <h2>Mis compras</h2><br/>
+            <p>Verificar compra <br/> Editar o cancelar compra </p>
+          </div>
+          <div>
+            <h2>Devoluciones y reembolsos</h2><br/>
+            <p>Devolver o cambiar compra<br/> </p>
+          </div>
+          <div>
+            <h2>Opciones de pago</h2><br/>
+            <p>Añadir o editar métodos de pago <br/> Modificar una tarjeta de pago caducada</p>
+          </div>
+      </div> 
+    </form> 
+  </div>
+
 </body>
 </html>

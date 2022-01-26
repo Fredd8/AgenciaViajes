@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="video/fondo.mp4" type="video/mp4">
+  </video>
+
+  <!-- Esto sera la cabecera -->
+  <header>
+    <div>
+      <!-- Imagen en css -->
+    </div>
+    <div>
+      <a href="index.html" ><h1>FreddyExpress</h1></a>
+    </div>
+    <div>
+      <a href="#Ayuda"><img src="img/help.png"></a>       <!-- Icon Ayuda  -->
+      <a href="#miModal"><img src="img/user.png"></a>     <!-- Icon Login -->
+    </div>
+  </header>
+  <nav>
+    <a href="c_AmericaNorte.html"><p>America Norte</p></a>
+    <a href="c_AmericaSur.html"><p>America Sur</p></a>
+    <a href="c_Europa.html"><p>Europa</p></a>
+    <a href="c_Africa.html"><p>Africa</p></a>
+    <a href="c_Asia.html"><p>Asia</p></a>
+    <a href="c_Oceania.html"><p>Oceania</p></a>
+  </nav>
+
+  <!-- Esto la cuerpo -->
+  <div class="space"></div> 
+  <section class="titulodescubre">
+    <article><h2>Realizar Compra</h2></article>
+  </section>
+  <section class="section_formCompra">
+    <div class="formCompra">
+      <form action="index.html"> 
+        <div class="formCompra_contenedor"> 
+          <fieldset>
+            <legend><h2>Información Personal</h2></legend>
+            <div class="formCompra_inter">
+              <br/><label>Nombre:</label> <input type="text" value=""/>
+              <br/><br/><label>Apellidos:</label> <input type="text" value=""/>
+              <br/><br/><label>DNI/NIF:</label> <input type="text" value="" maxlength="9" />
+              <br/><br/><label>Telf:</label> <input type="text" value=""/>
+              <br/><br/><label>Correo electrónico:</label> <input type="text" value=""/>
+              <br/><br/><label>Sexo</label>&nbsp;&nbsp;&nbsp;
+              <input type="radio" name="sexo" value="hombre" checked="checked" />
+              <label>Hombre</label>&nbsp;&nbsp;&nbsp;
+              <input type="radio" name="sexo" value="mujer" />
+              <label>Mujer</label>
+              <br/><br/>
+            </div>
+          </fieldset> 
+          <br/><br/>
+          <fieldset>
+            <legend><h2>Método de Pago</h2></legend>
+            <div class="formCompra_inter">
+              <br/><label>Nº de Cuenta:</label> <input type="number" value="" maxlength="15" placeholder="0000000000" />
+              <br/><br/><label>CVV: </label> <input type="number" value="" maxlength="3" placeholder="000" size="10" />
+              <br/><br/><label>Incluir foto DNI:</label> <input type="file" name="foto" />
+              <br/><br/>
+            </div>
+          </fieldset> 
+          <br/><br/> 
+          <fieldset>
+            <legend><h2>Seguro de Viajes</h2></legend>
+            <div class="formCompra_inter">
+              <br/><label>Básico</label> <input type="radio" name="seguro"/>
+              <p>El <b>seguro Básico</b> ofrece:</p>
+              <ul>
+                <ol>&nbsp;Devolución completa antes de los 2 últimos meses</ol>
+                <ol>&nbsp;Fianza se pierde</ol>
+              </ul>
+              <p class="formCompra_seguro">25€</p>
+              <br/><label>Avanzado</label> <input type="radio" name="seguro"/>
+              <p>El <b>seguro Avanzado</b> ofrece:</p>
+              <ul>
+                <ol>&nbsp;Devolución completa antes de los últimos 15 días</ol>
+                <ol>&nbsp;Fianza se pierde</ol>
+              </ul>
+              <p class="formCompra_seguro">40€</p>
+              <br/><label>Premium</label> <input type="radio" name="seguro"/>
+              <p>El <b>seguro Premium</b> ofrece:</p>
+              <ul>
+                <ol>&nbsp;Devolución completa antes del últimos 15 días</ol>
+                <ol>&nbsp;Fianza devuelve el 60% (bono de descuento de la web)</ol>
+              </ul>
+              <p class="formCompra_seguro">60€</p>
+              <br/>
+              <table>
+                <caption>Comparar seguros</caption>
+                <tr>
+                  <th>Básico</th>
+                  <th>Avanzado</th>
+                  <th>Premium</th>
+                </tr>
+                <tr>
+                  <td>2 meses Devolución</td>
+                  <td>15 días Devolución</td>
+                  <td>15 días (+60% fianza)</td>
+                </tr>
+                <tr>
+                  <td>25€</td>
+                  <td>40€</td>
+                  <td>60€</td>
+                </tr>
+              </table>
+              <br/>
+          </fieldset>
+          <br/>
+          <br/><br/>  
+          <input type="checkbox"/> <label>Acepto términos y condiciones, política de privacidad de la empresa.</label>
+          <br/><br/>
+          <input type="submit" value="Guardar cambios" />
+          <input type="reset"value="Borrar los datos introducidos" />
+          <br/>
+        </div>
+      </form> 
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- Esto el pie de página -->
+  <footer>
+    <section class="pie">
+      <div>
+        <h1>LOCALIZACION</h1><br/>
+        <dl>
+          <dd>FreddyExpress Company</dd>
+          <dd>3 Av. America 209 </dd>
+          <dd>Madrid, CP 28028</dd>
+          <dd></dd>
+          <dd>@ 2021 FreddyExpress Company SA</dd>
+        </dl>
+      </div>
+      <div>
+        <h1>REDES SOCIALES</h1><br/>
+        <a href="https://es-es.facebook.com"><img src="img/facebook.png"></a>
+        <a href="https://twitter.com/?lang=es"><img src="img/titwer.png"></a>
+        <a href="https://www.instagram.com/?hl=es"><img src="img/insta.png"></a>
+      </div>
+      <div>
+        <h1>SOBRE NOSOTROS</h1><br/>
+        <dl>
+          <dd> CEO &nbsp; Freddy Leyva</dd>
+          <dd> Director &nbsp; Beni</dd>
+          <dd> Manager &nbsp; Alvaro</dd>
+          <dd><br/> </dd>
+          <dd> Tel: 668 96 87 35</dd>
+        </dl>
+      </div>
+    </section>
+  </footer>
+
+  <!-- Ventana Modal: Login-->
+  <div id="miModal" class="modal">
+    <form action="ofertas.html"> 
+      <div class="modal-login modal-all">
+        <a href="#"><p>x</p></a> 
+        <h2>Iniciar sesión</h2><br/>
+        <label>Usuario:</label><br/>
+        <input type="text"><br/><br/>
+        <label>Contraseña:</label><br/>
+        <input type="password"><br/><br/>
+        <input type="submit" value="Continuar">
+        <input type="reset" value="Borrar">
+      </div> 
+    </form> 
+  </div>
+  
+  <!-- Ventana Modal: Ayuda-->
+  <div id="Ayuda" class="modal">
+    <form action="#"> 
+      <div class="modal-ayuda modal-all">
+        <a href="#"><p>x</p></a> 
+        <h2>Preguntas frecuentes</h2><br/>
+        <label>Buscador:</label><br/>
+        <input type="text">
+        <input type="button" value="Buscar"><br/><br/>
+        <div class="modal-busquedas">
+          <h1>Atencion al Cliente</h1><br/>
+          <div>
+            <h2>Mis compras</h2><br/>
+            <p>Verificar compra <br/> Editar o cancelar compra </p>
+          </div>
+          <div>
+            <h2>Devoluciones y reembolsos</h2><br/>
+            <p>Devolver o cambiar compra<br/> </p>
+          </div>
+          <div>
+            <h2>Opciones de pago</h2><br/>
+            <p>Añadir o editar métodos de pago <br/> Modificar una tarjeta de pago caducada</p>
+          </div>
+      </div> 
+    </form> 
+  </div>
+
+</body>
+</html>
